@@ -1,0 +1,184 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@keyframes slide-right {
+    from {
+        transform: translateX(-400px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+@keyframes{
+    
+}
+
+@keyframes slide-down {
+    from {
+        transform: translateY(-20px);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .3;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes nav-anim {
+    from {
+        height: 0px;
+    }
+
+    to {
+        height: 130px;
+    }
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(3px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+@keyframes down{
+    from{
+        transform: translateY(-400px);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+@keyframes zgol{
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.5);
+    }
+}
+
+body {
+    background-color: rgb(81, 81, 245);
+    font-family: sans-serif;
+}
+
+#main-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: black;
+    padding: 15px;
+    animation: slide-left 1s;
+}
+
+#main-title:hover {
+    animation: float 1.5s;
+    animation-iteration-count: infinite;
+    text-shadow: 0 0 5px white;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: black;
+}
+.container img{
+    border: 2px solid black;
+    margin: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 6px gray;
+    animation: fade .7s;
+}
+p {
+    text-align: justify;
+    animation: slide-right 1s;
+}
+
+nav {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    max-height: 350px;
+}
+
+
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    gap: 30px;
+    margin: 15px 0;
+}
+
+nav ul li {
+    color: white;
+}
+
+.dropdown-content li {
+    animation: slide-down 1s !important;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    animation: fade 1s;
+}
+
+nav ul li a:hover {
+    text-shadow: 0 0 5px white;
+}
+
+.dropdown-content {
+    display: none;
+    color: white;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    background-color: black;
+    animation: nav-anim .5s ease-in;
+    max-width: 150px;
+    height: 130px;
+}
+.facebook img{
+    margin: 15px;
+    border-radius: 5px;
+    animation: fade .7s;
+    width: 50px;
+}
+.facebook img:hover{
+    filter: drop-shadow(0 0 3px black) ;
+}
