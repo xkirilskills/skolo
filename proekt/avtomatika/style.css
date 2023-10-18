@@ -75,6 +75,7 @@ p{
 }
 .container #primeri{
     margin: 10px;
+    animation: zoom 1s;
 }
 nav #main-nav{
     align-items: left;
@@ -100,6 +101,7 @@ nav #main-nav{
 }
 nav ul{
     list-style-type: none;
+    animation: zoom 1s;
 }
 nav ul li a{
     text-decoration: none;
