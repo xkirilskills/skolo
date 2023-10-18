@@ -80,8 +80,7 @@ p{
 nav #main-nav{
     align-items: left;
     justify-content: left;
-    height: 20px;
-    
+    height: 20px;   
 }
 #main-nav ul{
     list-style-type: none;
