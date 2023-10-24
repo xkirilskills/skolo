@@ -114,6 +114,8 @@ nav ul li a:hover{
 }
 #left{
     animation: slide-left 1.3s;
+    width: 80%;
+    height: 570px;
 }
 #right{
     animation: slide-rigth 1.3s;
@@ -141,6 +143,6 @@ section{
 .za-nas p{
     text-align: center;
     text-align: justify;
-    animation: fade 1s;
+    animation: fade 1.3s;
     font-size: 25px;
 }
