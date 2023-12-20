@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(186, 113, 254);
+}
+nav{
+    background-color: rgb(46, 99, 106);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+    
+}
+nav ul li{
+    padding: 0 15px;
+    list-style-type: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+nav ul li a:hover{
+    text-shadow: 0 0 4.5px black;
+}
+.border{
+    background-color: #2A628F;
+    border: solid #052231 2px;
+    border-radius: 5px; 
+    margin: auto;
+    width: 80%;
+}
+.contents{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
