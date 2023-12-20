@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: rgb(34, 31, 31);
+}
+@keyframes slide {
+  from {
+    transform: translateY(-400px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0.3;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes slide-left {
+  from {
+    transform: translateX(600px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes slide-right {
+  from {
+    transform: translateX(-600px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+#main-title {
+  margin: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  color: rgb(247, 56, 56);
+  animation: slide 1s;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin: 30px;
+  animation: fade 1.3s;
+}
+.text {
+  font-size: 30px;
+  color: whitesmoke;
+}
+.slika {
+  margin: 20px;
+  padding: 20px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: fade 1.4s;
+}
+.containercheats ul {
+  display: grid;
+  grid-template-columns: 40% 30%;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 20px 0;
+  margin: 35px 0;
+  text-shadow: 0 0 3px white;
+}
+#cheats img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 80vh;
+  margin: 30px 0;
+  animation: fade 1.4s;
+}
+.containercheats ul li {
+  color: whitesmoke;
+  font-size: 30px;
+}
+#left {
+  animation: slide-left 1s;
+}
+#right {
+  animation: slide-right 1s;
+}
+footer {
+  position: sticky;
+  margin-top: 20px;
+  background-color: whitesmoke;
+  color: black;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+}
+::-webkit-scrollbar {
+  color: black;
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: white;
+  width: 10px;
+}
+/*responsive*/
+@media (max-width: 500px) {
+  body {
+    background-color: rgb(34, 31, 31);
+  }
+  #main-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    color: rgb(247, 56, 56);
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 30px;
+  }
+  .text {
+    font-size: 20px;
+    color: whitesmoke;
+  }
+  .slika {
+    margin: 20px;
+    padding: 20px;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .containercheats ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 40px ;
+    width: 80%;
+    margin-bottom: 30px;
+    font-size: 15px;
+  }
+  .containercheats ul li {
+    color: whitesmoke;
+  }
+  #cheats img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 23vh;
+  }
+  footer {
+    position: sticky;
+    margin-top: 20px;
+    background-color: whitesmoke;
+    color: black;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+  }
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Почетна</title>
+</head>
+
+<body>
+    <h1 id="main-title">Ова е мотео портфолио</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Почетна</a></li>
+            <li><a href="za-mene.html">За мене</a></li>
+            <li><a href="proekti.html">Мој проекти</a></li>
+        </ul>
+    </nav>
+<img id="slikaodmene" src="img/slikaodmene.jpg" alt=""> 
+<section>
+    <div id="text">
+        <p>Кирил Апостолов</p><br>
+        <p>Јас сум Кирил Апостолов и учам во средното општинско училиште <a onclick="readmore()" id="link"  href="za-mene.html">Гошо Викент..</a></p>
+        <script>
+            function readmore(){
+                document.getElementById('link');
+                alert("Со одење на овој линк ќе прочитате повеке за мене")
+            }
+        </script>
+    </div>
+</section>
+</body>
+
+</html>
