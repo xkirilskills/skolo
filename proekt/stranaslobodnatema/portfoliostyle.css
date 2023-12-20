@@ -3,10 +3,10 @@
     padding: 0;
 }
 body{
-    background-color: rgb(186, 113, 254);
+    background-color: rgb(0, 144, 201);
 }
 nav{
-    background-color: rgb(46, 99, 106);
+    background-color: rgb(60, 111, 142);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,17 +22,19 @@ nav ul{
 nav ul li{
     padding: 0 15px;
     list-style-type: none;
+    font-size: 22px;
 }
 nav ul li a{
     text-decoration: none;
     color: white;
 }
-nav ul li a:hover{
+nav ul li:hover{
     text-shadow: 0 0 4.5px black;
+    scale: 2;
 }
 .border{
-    background-color: #2A628F;
-    border: solid #052231 2px;
+    background-color: rgb(213, 219, 45);
+    border: solid #ffffff 2px;
     border-radius: 5px; 
     margin: auto;
     width: 80%;
@@ -43,4 +45,8 @@ nav ul li a:hover{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.contents img {
+    filter: drop-shadow(0 0 4px black);
 }
