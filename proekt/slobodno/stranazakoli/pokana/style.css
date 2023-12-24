@@ -61,8 +61,24 @@ nav ul li{
   padding: 0 10px;
   font-size: 20px;
 }
-#gore-slika {
-  margin-right: 48.7rem;
+.gore-grid{
+  display: grid;
+  grid-template-rows: auto auto;
+}
+#gore-slika{
+  width: 699px;
+  height: 730px;
+}
+.img{
+ display: flex;
+ justify-content: center;
+ align-items: center; 
+}
+#slika{
+  width: 775px;
+  height: 365px;
+  margin-left: 5px;
+  margin-top: 3px;
 }
 section {
   width: 70%;
@@ -80,11 +96,19 @@ section {
   justify-content: center;
   align-items: center;
   color: black;
+  font-size: 17px;
   margin: 20px 0;
   padding: 10px 0;
+  border: 3px solid #bbab8c;
+  border-radius: 3px;
+  background-color: #bbab8c;
+  width: 100px;
 }
 #razdaleko {
   padding: 0 8px;
+}
+#razdaleko:hover{
+  text-shadow: 0 0 1px black;
 }
 .grid {
   display: grid;
@@ -141,8 +165,8 @@ a {
   justify-content: center;
 }
 #image {
-  width: 100%;
-  height: 100%;
+  width: 300px;
+  height: 300px;
   margin: 10px 0;
 }
 #image:hover {
