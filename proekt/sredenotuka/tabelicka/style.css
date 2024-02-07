@@ -1,0 +1,16 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#tabelicka{
+    width: 100%;
+}
+table,th,td{
+    border: 1px solid white;
+    background-color: black;
+    color: white;
+}
+body{
+    background-color: #0A8;
+    background-image: url(sliki/tasak.jpg);
+}
