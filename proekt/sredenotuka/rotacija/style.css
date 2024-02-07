@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@keyframes rotate{
+    from{
+        rotate: 360deg;
+    }
+    to{
+        rotate: 0;
+    }
+}
+.rotiraj{
+    animation: rotate 1ms infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0;
+}

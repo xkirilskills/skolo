@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@keyframes prosetka{
+    0%{
+        transform: translateX(0);
+    }
+    50%{
+        transform: translateX(1440px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+body{
+    background-color: black;
+}
+#main-title{
+    background-color: white;
+    width: 100px;
+    animation: prosetka 1ms infinite;
+}
+#p1{
+    background-color: red;
+    width: 20px;
+    margin: 10px 20px;
+}
+div{
+    color: green;
+}
