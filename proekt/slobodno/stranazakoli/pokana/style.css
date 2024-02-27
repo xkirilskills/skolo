@@ -26,6 +26,14 @@
     transform: scale(1);
   }
 }
+@keyframes slide-down{
+  from{
+    transform: translateY(-20px);
+  }
+  to{
+    transform: translateY(0px);
+  }
+}
 body {
   background-color: #fdf7e4;
   color: #bbab8c;
@@ -60,6 +68,21 @@ nav ul{
 nav ul li{
   padding: 0 10px;
   font-size: 20px;
+}
+#eden{
+  animation: slide-down 1s;
+}
+#dva{
+  animation: slide-down 1.4s;
+}
+#tri{
+  animation: slide-down 1.8s;
+}
+#cetiri{
+  animation: slide-down 2.2s;
+}
+#pet{
+  animation: slide-down 2.6s;
 }
 .gore-grid{
   display: grid;
