@@ -2,24 +2,82 @@
     margin: 0;
     padding: 0;
 }
+@keyframes fade-in{
+    from{
+        opacity: 0.1;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes slide-down{
+    0%{
+        transform: translateY(-100px);
+    }
+    50%{
+        transform: translateY(15px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+@keyframes bounce{
+    from{
+        transform: scale(0.8);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+@keyframes slide-left{
+    from{
+        transform: translateX(-400px);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+@keyframes slide-right{
+    from{
+        transform: translateX(400px);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
 body{
-    background-color: black;
+    background: linear-gradient(to bottom, black,rgb(164, 164, 164));
 
 }
+
 #main-title{
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 20px 0;
     color: white;
+    animation: slide-down 1s;
+    font-size: 40px;
 }
 #bullet{
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 60vh;
+    height: 45vh;
+    object-fit: cover;
     margin: auto;
-    margin-top: 20px;
-    width: 40%;
+    animation: fade-in 1s;
+    box-shadow: 0 0 2px whitesmoke;
+    border: 1px dotted white;
+}
+.images{
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+    margin: auto;
 }
 #para{
     margin: 10px 0;
@@ -32,7 +90,7 @@ body{
     margin: auto;
     margin-top: 40px;
     margin-bottom: 10px;
-    background-color: white;
+    background:linear-gradient(to bottom, white,rgb(156, 156, 156));
     color: black;
     font-size: 20px;
     font-family: sans-serif;
@@ -40,10 +98,209 @@ body{
     width: 80%;
     border-radius: 2px;
     box-shadow: 0 0 5px white;
+    animation: bounce 1s;
+}
+#tekst{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    text-align: center;
+    margin: 10px 0;
+    text-shadow: 0 0 3px whitesmoke;
+    animation: fade-in 1s;
+}
+.albums{
+    width: 80%;
+    display: grid;
+    grid-template-columns: 30% 30%;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 20px;
+}
+#album-left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+    width: 40vh;
+    height: 40vh;
+    margin: auto;
+    box-shadow: 0 0 6px black;
+    animation: slide-left 1s;
+}
+#album-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+    width: 40vh;
+    height: 40vh;
+    margin: auto;
+    box-shadow: 0 0 6px black;
+    animation: slide-right 1s;
 }
 ::-webkit-scrollbar-thumb{
-    background-color: white;
+    background:linear-gradient(to bottom, black,rgb(164, 164, 164))
 }
 ::-webkit-scrollbar{
     background-color: black;
+}
+
+/*responsive*/
+
+@media(max-width:450px){
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    @keyframes fade-in{
+        from{
+            opacity: 0.1;
+        }
+        to{
+            opacity: 1;
+        }
+    }
+    @keyframes slide-down{
+        0%{
+            transform: translateY(-100px);
+        }
+        50%{
+            transform: translateY(15px);
+        }
+        100%{
+            transform: translateY(0);
+        }
+    }
+    @keyframes bounce{
+        from{
+            transform: scale(0.8);
+        }
+        to{
+            transform: scale(1);
+        }
+    }
+    @keyframes slide-left{
+        from{
+            transform: translateX(-400px);
+        }
+        to{
+            transform: translateX(0);
+        }
+    }
+    @keyframes slide-right{
+        from{
+            transform: translateX(400px);
+        }
+        to{
+            transform: translateX(0);
+        }
+    }
+    body{
+        background: linear-gradient(to bottom, black,rgb(164, 164, 164));
+    
+    }
+    
+    #main-title{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 20px 0;
+        color: white;
+        animation: slide-down 1s;
+        font-size: 30px;
+    }
+    #bullet{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 25vh;
+        height: 15vh;
+        object-fit: cover;
+        margin: auto;
+        animation: fade-in 1s;
+        box-shadow: 0 0 2px whitesmoke;
+        border: 1px dotted white;
+    }
+    .images{
+        justify-content: center;
+        align-items: center;
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 10px;
+        margin: auto;
+    }
+    #para{
+        margin: 10px 0;
+        padding: 0 10px;
+    }
+    .text{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: auto;
+        margin-top: 40px;
+        margin-bottom: 10px;
+        background:linear-gradient(to bottom, white,rgb(156, 156, 156));
+        color: black;
+        font-size: 20px;
+        font-family: sans-serif;
+        font-style: italic;
+        width: 80%;
+        border-radius: 2px;
+        box-shadow: 0 0 5px white;
+        animation: bounce 1s;
+    }
+    #tekst{
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+        text-align: center;
+        margin: 10px 0;
+        text-shadow: 0 0 3px whitesmoke;
+        animation: fade-in 1s;
+    }
+    .albums{
+        width: 80%;
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    #album-left{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        object-fit: cover;
+        width: 25vh;
+        height: 25vh;
+        margin: auto;
+        box-shadow: 0 0 6px black;
+        animation: slide-left 1s;
+    }
+    #album-right{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        object-fit: cover;
+        width: 25vh;
+        height: 25vh;
+        margin: auto;
+        box-shadow: 0 0 6px black;
+        animation: slide-right 1s;
+    }
+    ::-webkit-scrollbar-thumb{
+        background:linear-gradient(to bottom, black,rgb(164, 164, 164))
+    }
+    ::-webkit-scrollbar{
+        background-color: black;
+    }
 }
